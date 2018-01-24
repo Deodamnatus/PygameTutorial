@@ -2,10 +2,9 @@ import pygame                           # import the pygame library which has ma
 
 pygame.init()                           # initializing the pygame window
 screen = pygame.display.set_mode((400, 300))    # creating screen upon which we can place images
-
 done = False                            # while loop exit condition
-
-ball = pygame.image.load("")
+black = (0,0,0)
+red_dvd = pygame.image.load("C:\\Users\\Jeremy\\Pictures\\red_dvd.png")
 
 while not done:
     for event in pygame.event.get():    # whenever pygame recognizes an event (IE: mouse movement, clicking on the window x
@@ -13,7 +12,7 @@ while not done:
             done = True                 # exit the loop
 
 
-    black = (0,0,0)
-    screen.fill(black)
 
+    screen.fill(black)
+    screen.blit(red_dvd, (0,0))
     pygame.display.flip()               # update display with current picture
