@@ -1,4 +1,4 @@
-import pygame,time                      # import the pygame library which has many functions we will need later
+import pygame, time                      # import the pygame library which has many functions we will need later
 
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 500
